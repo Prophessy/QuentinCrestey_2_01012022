@@ -7,7 +7,6 @@
 
 #body {
     font-family: 'Raleway Regular';
-    margin: 0;
     width: 98%;
     max-width: 1440px;
     min-width: 578px;
@@ -168,6 +167,7 @@ ul {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    width: 100%;
 }
 
 #hebergement_marseille {
@@ -255,6 +255,7 @@ ul {
     margin: 15px;
     width: 385px;
     height: 140px;
+    position: relative;
 }
 
 .carre_populaire:hover {
@@ -298,13 +299,9 @@ ul {
 }
 
 .etoile_populaire {
-    margin-top: 35px;
-    margin-left: 130px;
-}
-
-.etoile_populaire_haut {
-    margin-left: 130px;
-    margin-top: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
 }
 
 .fa-star {
@@ -481,8 +478,7 @@ ul {
     .les_plus_populaire {
         width: 100%;
         height: 300px;
-        margin-left: 0%;
-        margin-bottom: 40px;
+        margin: 0 0 40px 0;
     }
 
     .carre_populaire {
@@ -540,54 +536,6 @@ ul {
     }
 }
 
-@media only screen and (max-width: 1088px) {
-    #media_populaire_droite {
-        margin-top: 50px;
-    }
-}
-
-@media only screen and (max-width: 1076px) {
-    #media_populaire_gauche {
-        margin-top: 50px;
-    }
-}
-
-@media only screen and (max-width: 1033px) {
-    #media_populaire_gauche {
-        margin-top: 30px;
-    }
-}
-
-@media screen and (max-width: 998px) {
-    #media_populaire_gauche {
-        margin-top: 30px;
-    }
-}
-
-@media screen and (max-width: 979px) {
-    #media_populaire_droite {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (max-width: 1046px) {
-    #media_populaire_droite {
-        margin-top: 30px;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .etoile_populaire {
-        margin-top: 50px;
-    }
-}
-
-@media screen and (max-width: 1350px) {
-    .etoile_populaire {
-        margin-top: 30px;
-    }
-}
-
 @media screen and (max-width: 961px) {
     .les_plus_populaire {
         flex-direction: column;
@@ -604,14 +552,6 @@ ul {
 
     .carre_marseille {
         width: 40%;
-    }
-
-    #media_populaire_gauche, #media_populaire_droite {
-        margin-top: 50px;
-    }
-
-    .etoile_populaire {
-        margin-top: 50px;
     }
 }
 
@@ -632,9 +572,8 @@ ul {
 
     .hebergements_activites {
         width: 100%;
-        margin-right: 2%;
         justify-content: center;
-        margin-right: 0;
+        margin: auto;
     }
 
     .hebergements, .activites {
